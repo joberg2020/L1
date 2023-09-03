@@ -193,4 +193,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+memes.json
+
 # End of https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,visualstudiocode

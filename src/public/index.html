@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>PersonalMemes</title>
+    <script src="js/main.js" async></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<h1>Home</h1>
 
+<body>
+    <header>
+        <h1>Get your meme</h1>
+    </header>
+
+    <main>
+        <form action="/memes" method="post" class="name-input">
+            <fieldset>
+                <legend>Enter your name</legend>
+            <input type="text" id="input" name="name" placeholder="Enter your name" required />
+            <input type="submit" id="button" value="Submit" />
+        </fieldset>
+        </form>
+        <div id="status" class="hidden"></div>
+        <div id="imgContainer">
+            <img id="output" class="hidden" src="" alt="meme">
+
+        </div>
+    </main>
+    <footer>
+        <p>Created by Jörgen for the course 1DV610</p>
+        <p>Using OpenAI-api and api.memegen.link</p>
+    </footer>
+            
 </body>
+
 </html>

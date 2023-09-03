@@ -1,9 +1,9 @@
 
-import express from 'express'
-import { memeController } from '../controllers/memeController.js'
+import express from 'express';
+import {MemeController} from '../controllers/memeController.js';
 
-export const router = express.Router()
+export const router = new express.Router();
 
-const controller = new memeController()
+const controller = new MemeController();
 
-router.get('/', (req, res, next) => controller.getMeme(req, res, next))
+router.post('/', (req, res, next) => controller.getMeme(req, res, next));
